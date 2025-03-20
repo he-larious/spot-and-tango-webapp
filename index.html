@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refurbished Computer Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9" id="main-content">
+                <h1>Refurbished Computer Store</h1>
+
+                <div class="mb-4">
+                    <select id="category-filter" class="form-control" onchange="displayProducts()">
+                        <!-- Options will be rendered here -->
+                    </select>
+                </div>
+
+                <div id="products" class="row">
+                    <!-- Product cards will be rendered here -->
+                </div>
+            </div>
+
+            <div class="col-md-3" id="cart-container">
+                <div id="cart">
+                    <h2>Shopping Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <div id="total"><b>Total:</b> $<span id="total-price">0.00</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
